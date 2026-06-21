@@ -1,0 +1,62 @@
+---
+description: Reglas de diseño y estilo visual para el proyecto CACO a tu mesa
+globs: ["**/*.tsx", "**/*.jsx", "**/*.css"]
+alwaysApply: true
+---
+
+# Dirección de arte — CACO a tu mesa
+
+Este es el sitio de un chef privado que vende comida casera de autor sellada al
+vacío, en formato de caja semanal. La estética debe sentirse premium y de
+restaurante de autor — NUNCA como meal-prep de gimnasio, comida rápida o
+plantilla genérica de agencia.
+
+## Paleta de colores
+- Fondo principal: negro profundo `#0a0a0a` / `#111111`
+- Texto principal: blanco roto `#f5f3ef`
+- Acento (usar con moderación, solo en detalles/hover/líneas): dorado apagado
+  `#c9974f`
+- Nunca usar colores saturados, neón, o paletas tipo "fitness app"
+- El negro y el espacio negativo son protagonistas, no un relleno
+
+## Tipografía
+- Títulos: serif elegante (Fraunces, Playfair Display o Cormorant)
+- Cuerpo de texto: sans-serif limpia (Inter o Manrope)
+- Jerarquía clara: títulos grandes, generoso line-height, evitar bloques de
+  texto densos
+- Replicar la jerarquía del logo: "CACO" en mayúsculas bold + "a tu mesa" en
+  minúsculas debajo
+
+## Fotografía e imágenes
+- La fotografía gastronómica es el elemento visual principal — debe verse a
+  gran tamaño, nunca recortada de forma forzada o aplastada
+- Usar siempre `next/image` con `width`/`height` definidos o `fill` +
+  contenedor con `aspect-ratio` fijo
+- `priority` solo en la imagen del hero; `loading="lazy"` en el resto
+- Overlay oscuro sutil sobre fotos cuando haya texto encima, para mantener
+  legibilidad sin perder la imagen
+
+## Componentes y UI
+- Evitar componentes UI genéricos sin personalizar (nada que se vea a
+  "template de Bootstrap" o dashboard SaaS por defecto)
+- Botones: bordes rectos o levemente redondeados (no pill genérico), con
+  estados hover sutiles usando el acento dorado
+- Espaciado generoso entre secciones (mínimo equivalente a `py-20` / `py-24`
+  en desktop)
+- Iconografía: outline/minimalista, nunca emojis en la UI final
+
+## Animaciones
+- Sutiles y elegantes: fade-in + slide-up al hacer scroll
+- Nada de animaciones llamativas, rebotes, o efectos tipo "landing de SaaS"
+- El movimiento debe sentirse cinematográfico, no juguetón
+
+## Responsive
+- Mobile-first: la mayoría del tráfico llega desde Instagram
+- Verificar que el botón de WhatsApp flotante no tape contenido en móvil
+- Imágenes de galería en grid de 1-2 columnas en móvil, 3-4 en desktop
+
+## Qué evitar siempre
+- Gradientes llamativos o efectos "glassmorphism" genéricos
+- Stock photos que no sean las fotos reales del cliente
+- Tipografías por defecto del sistema (system-ui) en títulos
+- Layouts simétricos y predecibles tipo "3 cards iguales" sin variación visual
