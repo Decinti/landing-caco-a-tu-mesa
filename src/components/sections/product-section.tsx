@@ -57,7 +57,11 @@ export function ProductSection() {
             </ul>
 
             <div className="mt-10">
-              <WhatsAppButton label="Consultar disponibilidad" />
+              <WhatsAppButton
+                label="Consultar disponibilidad"
+                fullWidth
+                className="sm:w-auto"
+              />
             </div>
           </FadeIn>
         </div>

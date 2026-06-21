@@ -2,11 +2,24 @@
 
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 
 export function HeroSection() {
   const containerRef = useRef<HTMLElement>(null);
+  const [enableParallax, setEnableParallax] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
+    function updateParallax() {
+      setEnableParallax(mediaQuery.matches);
+    }
+
+    updateParallax();
+    mediaQuery.addEventListener("change", updateParallax);
+    return () => mediaQuery.removeEventListener("change", updateParallax);
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"],
@@ -20,7 +33,10 @@ export function HeroSection() {
       id="inicio"
       className="relative flex min-h-[100svh] items-end overflow-hidden"
     >
-      <motion.div className="absolute inset-0" style={{ y: imageY }}>
+      <motion.div
+        className="absolute inset-0"
+        style={{ y: enableParallax ? imageY : 0 }}
+      >
         {/* TODO: reemplazar con foto real del plato más impactante — hero.webp (renombrar src) */}
         <Image
           src="/images/hero.webp"
@@ -57,7 +73,7 @@ export function HeroSection() {
             disfruta.
           </p>
           <div className="mt-10">
-            <WhatsAppButton label="Pide tu caja semanal" size="lg" />
+            <WhatsAppButton label="Pide tu caja semanal" size="lg" fullWidth className="sm:w-auto" />
           </div>
         </motion.div>
       </motion.div>
@@ -66,7 +82,7 @@ export function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.8 }}
-        className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2"
+        className="absolute bottom-6 left-1/2 z-10 hidden -translate-x-1/2 sm:bottom-8 sm:block"
         aria-hidden="true"
       >
         <div className="flex flex-col items-center gap-2">

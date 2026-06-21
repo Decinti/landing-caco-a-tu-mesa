@@ -64,7 +64,7 @@ export function FloatingWhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Pedir por WhatsApp"
-      className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-accent/40 bg-background/90 text-accent shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-accent hover:text-background md:bottom-8 md:right-8"
+      className="fixed bottom-6 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-accent/40 bg-background/90 text-accent shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-accent hover:text-background max-sm:bottom-[max(1.5rem,env(safe-area-inset-bottom))] max-sm:right-[max(1.25rem,env(safe-area-inset-right))] md:bottom-8 md:right-8"
     >
       <WhatsAppIcon className="h-6 w-6" />
     </Link>

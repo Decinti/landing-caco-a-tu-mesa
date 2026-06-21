@@ -41,7 +41,7 @@ const iconMap: Record<StepIcon, ReactNode> = {
 
 export function StepCard({ step, title, description, icon }: StepCardProps) {
   return (
-    <article className="group flex min-w-[260px] flex-1 flex-col border border-foreground/10 bg-surface/50 p-6 transition-colors duration-300 hover:border-accent/30 md:min-w-0 md:p-8">
+    <article className="group flex w-full flex-col border border-foreground/10 bg-surface/50 p-6 transition-colors duration-300 hover:border-accent/30 sm:p-7 md:p-8">
       <div className="mb-6 flex items-center justify-between">
         <span className="text-accent">{iconMap[icon]}</span>
         <span className="font-sans text-xs tracking-[0.2em] text-foreground/40">

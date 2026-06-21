@@ -15,9 +15,9 @@ export function HowItWorksSection() {
           />
         </FadeIn>
 
-        <StaggerContainer className="mt-14 flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide md:mt-16 md:grid md:grid-cols-2 md:gap-6 md:overflow-visible lg:grid-cols-4">
+        <StaggerContainer className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 md:mt-16 md:gap-6 lg:grid-cols-4">
           {howItWorksSteps.map((step) => (
-            <StaggerItem key={step.step} className="snap-start">
+            <StaggerItem key={step.step}>
               <StepCard
                 step={step.step}
                 title={step.title}

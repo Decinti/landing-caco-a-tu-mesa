@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      <main className="pb-24">
+      <main className="pb-28 sm:pb-24">
         <HeroSection />
         <HowItWorksSection />
         <ProductSection />

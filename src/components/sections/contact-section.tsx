@@ -21,8 +21,8 @@ export function ContactSection() {
             formularios, sin esperas: directo del chef a tu puerta.
           </p>
 
-          <div className="mt-10 flex justify-center">
-            <WhatsAppButton label="Pedir por WhatsApp" size="lg" />
+          <div className="mt-10 flex justify-center px-0 sm:px-0">
+            <WhatsAppButton label="Pedir por WhatsApp" size="lg" fullWidth className="max-w-md sm:w-auto sm:max-w-none" />
           </div>
 
           <div className="mt-16 grid gap-8 border-t border-foreground/10 pt-12 sm:grid-cols-3">
