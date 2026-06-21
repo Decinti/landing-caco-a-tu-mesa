@@ -23,7 +23,7 @@ export function MenuGallerySection() {
           <SectionHeading
             eyebrow="Menú"
             title="Platos de la semana"
-            description="Cada semana una propuesta distinta, pensada con ingredientes de estación. Estos nombres son referenciales — el menú real se confirma por WhatsApp."
+            description="Cada semana una propuesta distinta, pensada con ingredientes de temporada. Los platos son referenciales; el menú real se confirma por WhatsApp."
           />
         </FadeIn>
 

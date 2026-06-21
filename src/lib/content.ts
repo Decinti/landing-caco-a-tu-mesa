@@ -8,9 +8,9 @@ export const navLinks = [
 export const howItWorksSteps = [
   {
     step: "01",
-    title: "Elegís tu caja semanal",
+    title: "Elige tu caja semanal",
     description:
-      "Elegí entre nuestras propuestas de menú o consultanos por WhatsApp para armar la caja ideal para vos.",
+      "Elige entre nuestras propuestas de menú o escríbenos por WhatsApp para armar la caja ideal para ti.",
     icon: "box" as const,
   },
   {
@@ -24,12 +24,12 @@ export const howItWorksSteps = [
     step: "03",
     title: "Te llega a domicilio",
     description:
-      "Recibís tu caja completa con todos los almuerzos de la semana, lista para guardar en tu heladera.",
+      "Recibes tu caja completa con todos los almuerzos de la semana, lista para guardar en tu refrigerador.",
     icon: "delivery" as const,
   },
   {
     step: "04",
-    title: "Calentás y disfrutás",
+    title: "Calienta y disfruta",
     description:
       "En minutos, microondas o baño maría. Comida de restaurante, en la comodidad de tu mesa.",
     icon: "heat" as const,

@@ -53,11 +53,11 @@ export function HeroSection() {
           </h1>
           <p className="mt-6 max-w-xl font-sans text-base leading-relaxed text-foreground/75 md:text-lg">
             Comida casera de autor, sellada al vacío en sobres individuales.
-            Una semana entera de almuerzos en una sola caja — calentá, serví y
-            disfrutá.
+            Una semana entera de almuerzos en una sola caja — calienta, sirve y
+            disfruta.
           </p>
           <div className="mt-10">
-            <WhatsAppButton label="Pedí tu caja semanal" size="lg" />
+            <WhatsAppButton label="Pide tu caja semanal" size="lg" />
           </div>
         </motion.div>
       </motion.div>

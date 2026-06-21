@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description:
       "Comida casera de autor preparada por chef privado, sellada al vacío. Una caja semanal con almuerzos listos para calentar.",
     type: "website",
-    locale: "es_AR",
+    locale: "es_CL",
     // TODO: reemplazar con URL de producción real
     url: "https://cacoatumesa.com",
     siteName: "CACO a tu mesa",

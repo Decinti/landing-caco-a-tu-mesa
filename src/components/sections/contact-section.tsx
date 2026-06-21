@@ -17,8 +17,8 @@ export function ContactSection() {
             comida de verdad
           </h2>
           <p className="mx-auto mt-6 max-w-lg font-sans text-base leading-relaxed text-foreground/65 md:text-lg">
-            Escribinos por WhatsApp y armamos juntos tu caja semanal. Sin
-            formularios, sin esperas — directo del chef a tu puerta.
+            Escríbenos por WhatsApp y armamos juntos tu caja semanal. Sin
+            formularios, sin esperas: directo del chef a tu puerta.
           </p>
 
           <div className="mt-10 flex justify-center">

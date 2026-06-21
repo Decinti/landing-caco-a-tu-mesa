@@ -25,7 +25,7 @@ export function AboutChefSection() {
           <FadeIn delay={0.15}>
             <SectionHeading
               eyebrow="Sobre el chef"
-              title="Cocina con alma y estación"
+              title="Cocina con alma y temporada"
             />
             <div className="mt-8 space-y-5 font-sans text-base leading-relaxed text-foreground/75 md:text-lg">
               <p>
